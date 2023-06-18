@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = prompt('nhap chuoi');
+    let a=[];
+    for (let i = 0; i < n ; i++) {
+        let b = prompt('nhap phan tu thu: ' + (i+1) );
+        a.push(b);
+    }
+    let x = prompt('nhap so can tim');
+    let flag = false;
+    for (let j = 0; j < a.length; j++){
+        if (a[j] === x){
+            flag = true;
+            a.splice(j,x);
+            a.push(0);
+        }
+    }
+    document.write('chuoi :' + a + "<br>");
+
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let n = prompt('nhập chuỗi ký tự');
+  let arr = n.split(" ");
+  document.write('mảng chưa sửa: ' + arr + "<br>")
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "-"){
+      arr.splice(i, 1, "_");
+    }
+  }
+  document.write('mảng đã sửa: ' + arr);
+</script>
+</html>

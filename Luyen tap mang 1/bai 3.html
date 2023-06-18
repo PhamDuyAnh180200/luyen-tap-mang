@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let n = prompt('nhập độ dài mảng');
+  let a = [];
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    let b = +prompt('nhập phần tử thứ '+ (i+1));
+    a.push(b)
+  }
+  let max=a[0];
+  let maxIndex=0;
+  for (let i = 1; i < a.length; i++) {
+      if (a[i]>max){
+          max = a[i];
+          maxIndex = i
+      }
+  }
+  for (const b of a) {
+      sum +=b;
+  }
+  document.write('So lon nhat: '+ max + "<br>");
+  const avg=sum/a.length;
+  document.write('Tong: '+sum +'<br>');
+  document.write('Trung binh: '+ avg );
+
+
+
+  
+</script>
+</html>
